@@ -79,7 +79,9 @@ public final class MailUtils {
     }
 
     public static void main(String[] args) throws Exception { // 做测试用
-        MailUtils.sendMail("3507890258@qq.com","你好，这是一封测试邮件，无需回复。","测试邮件");
+        String content = "<a href='http://localhost/travel/activeUserServlet?code=>点击激活【黑马旅游网】</a>";
+
+        MailUtils.sendMail("3507890258@qq.com",content,"测试邮件");
         System.out.println("发送成功");
     }
 
