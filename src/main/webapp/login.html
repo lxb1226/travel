@@ -22,7 +22,7 @@
 		$(function () {
 			// 1.给登录按钮绑定单击事件
 			$("#btn_submit").click(function(){
-				$.post("loginServlet", $("#loginForm").serialize(), function (data) {
+				$.post("user/login", $("#loginForm").serialize(), function (data) {
 					if(data.flag){
 						// 登录成功
 						location.href = "index.html";
